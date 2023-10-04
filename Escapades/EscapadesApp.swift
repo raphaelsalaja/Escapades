@@ -11,7 +11,7 @@ import SwiftUI
 struct EscapadesApp: App {
     var body: some Scene {
         WindowGroup {
-            LayeredStackShowcase()
+            BanterClub()
         }
     }
 }
