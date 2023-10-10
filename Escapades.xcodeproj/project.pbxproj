@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11360CCC2ACDA37400A15CF6 /* BanterClub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11360CCB2ACDA37400A15CF6 /* BanterClub.swift */; };
-		11A4F6672AD43C6F0080DFC1 /* AppleMoreInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4F6662AD43C6F0080DFC1 /* AppleMoreInformation.swift */; };
+		11A4F6672AD43C6F0080DFC1 /* BorderRadiusCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4F6662AD43C6F0080DFC1 /* BorderRadiusCalculator.swift */; };
+		11A4F6692AD5449E0080DFC1 /* BorderRadiusCalculatorIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4F6682AD5449E0080DFC1 /* BorderRadiusCalculatorIllustration.swift */; };
+		11A4F66B2AD544DF0080DFC1 /* BorderRadiusComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4F66A2AD544DF0080DFC1 /* BorderRadiusComponents.swift */; };
 		11B0BB652ACC089D004AE035 /* EscapadesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BB642ACC089D004AE035 /* EscapadesApp.swift */; };
 		11B0BB672ACC089D004AE035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BB662ACC089D004AE035 /* ContentView.swift */; };
 		11B0BB692ACC089E004AE035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B0BB682ACC089E004AE035 /* Assets.xcassets */; };
@@ -17,13 +19,13 @@
 		11B0BB772ACC1631004AE035 /* Modifier+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BB762ACC1631004AE035 /* Modifier+Extensions.swift */; };
 		11B0BB792ACC1E96004AE035 /* LayeredStackShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BB782ACC1E96004AE035 /* LayeredStackShowcase.swift */; };
 		11B0BB7C2ACC3C4D004AE035 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0BB7B2ACC3C4D004AE035 /* Transactions.swift */; };
-		11C5D0E82ACE096B004A1474 /* NotificationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5D0E72ACE096B004A1474 /* NotificationStack.swift */; };
-		11C5D0EA2ACE0A51004A1474 /* NotificationStackShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C5D0E92ACE0A51004A1474 /* NotificationStackShowcase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11360CCB2ACDA37400A15CF6 /* BanterClub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanterClub.swift; sourceTree = "<group>"; };
-		11A4F6662AD43C6F0080DFC1 /* AppleMoreInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMoreInformation.swift; sourceTree = "<group>"; };
+		11A4F6662AD43C6F0080DFC1 /* BorderRadiusCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRadiusCalculator.swift; sourceTree = "<group>"; };
+		11A4F6682AD5449E0080DFC1 /* BorderRadiusCalculatorIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRadiusCalculatorIllustration.swift; sourceTree = "<group>"; };
+		11A4F66A2AD544DF0080DFC1 /* BorderRadiusComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderRadiusComponents.swift; sourceTree = "<group>"; };
 		11B0BB612ACC089D004AE035 /* Escapades.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Escapades.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B0BB642ACC089D004AE035 /* EscapadesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscapadesApp.swift; sourceTree = "<group>"; };
 		11B0BB662ACC089D004AE035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,8 +35,6 @@
 		11B0BB762ACC1631004AE035 /* Modifier+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier+Extensions.swift"; sourceTree = "<group>"; };
 		11B0BB782ACC1E96004AE035 /* LayeredStackShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredStackShowcase.swift; sourceTree = "<group>"; };
 		11B0BB7B2ACC3C4D004AE035 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
-		11C5D0E72ACE096B004A1474 /* NotificationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStack.swift; sourceTree = "<group>"; };
-		11C5D0E92ACE0A51004A1474 /* NotificationStackShowcase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationStackShowcase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,13 +48,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		119CE6EC2ACD94DD00F01D67 /* Banter Club */ = {
+		119CE6EC2ACD94DD00F01D67 /* 2. Banter Club */ = {
 			isa = PBXGroup;
 			children = (
 				119CE6ED2ACD94FD00F01D67 /* Models */,
 				11360CCB2ACDA37400A15CF6 /* BanterClub.swift */,
 			);
-			path = "Banter Club";
+			path = "2. Banter Club";
 			sourceTree = "<group>";
 		};
 		119CE6ED2ACD94FD00F01D67 /* Models */ = {
@@ -64,19 +64,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		11A4F6642AD3F5B20080DFC1 /* Breach Protocol */ = {
+		11A4F6642AD3F5B20080DFC1 /* 4. Breach Protocol */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "Breach Protocol";
+			path = "4. Breach Protocol";
 			sourceTree = "<group>";
 		};
-		11A4F6652AD43C4C0080DFC1 /* Border Radius */ = {
+		11A4F6652AD43C4C0080DFC1 /* 3. Border Radius */ = {
 			isa = PBXGroup;
 			children = (
-				11A4F6662AD43C6F0080DFC1 /* AppleMoreInformation.swift */,
+				11A4F6662AD43C6F0080DFC1 /* BorderRadiusCalculator.swift */,
+				11A4F6682AD5449E0080DFC1 /* BorderRadiusCalculatorIllustration.swift */,
+				11A4F66A2AD544DF0080DFC1 /* BorderRadiusComponents.swift */,
 			);
-			path = "Border Radius";
+			path = "3. Border Radius";
 			sourceTree = "<group>";
 		};
 		11B0BB582ACC089D004AE035 = {
@@ -98,15 +100,14 @@
 		11B0BB632ACC089D004AE035 /* Escapades */ = {
 			isa = PBXGroup;
 			children = (
-				11A4F6652AD43C4C0080DFC1 /* Border Radius */,
-				11A4F6642AD3F5B20080DFC1 /* Breach Protocol */,
-				11C5D0E62ACE095A004A1474 /* Notification Stack */,
-				119CE6EC2ACD94DD00F01D67 /* Banter Club */,
-				11B0BB752ACC162C004AE035 /* Helpers */,
-				11B0BB722ACC13EC004AE035 /* Layered Stack */,
-				11B0BB642ACC089D004AE035 /* EscapadesApp.swift */,
 				11B0BB662ACC089D004AE035 /* ContentView.swift */,
+				11B0BB642ACC089D004AE035 /* EscapadesApp.swift */,
 				11B0BB682ACC089E004AE035 /* Assets.xcassets */,
+				11B0BB752ACC162C004AE035 /* 0. Global Helpers */,
+				11B0BB722ACC13EC004AE035 /* 1. Layered Stack */,
+				119CE6EC2ACD94DD00F01D67 /* 2. Banter Club */,
+				11A4F6652AD43C4C0080DFC1 /* 3. Border Radius */,
+				11A4F6642AD3F5B20080DFC1 /* 4. Breach Protocol */,
 				11B0BB6A2ACC089E004AE035 /* Preview Content */,
 			);
 			path = Escapades;
@@ -120,22 +121,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		11B0BB722ACC13EC004AE035 /* Layered Stack */ = {
+		11B0BB722ACC13EC004AE035 /* 1. Layered Stack */ = {
 			isa = PBXGroup;
 			children = (
 				11B0BB7A2ACC3B22004AE035 /* Models */,
 				11B0BB732ACC14DB004AE035 /* LayeredStackElement.swift */,
 				11B0BB782ACC1E96004AE035 /* LayeredStackShowcase.swift */,
 			);
-			path = "Layered Stack";
+			path = "1. Layered Stack";
 			sourceTree = "<group>";
 		};
-		11B0BB752ACC162C004AE035 /* Helpers */ = {
+		11B0BB752ACC162C004AE035 /* 0. Global Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				11B0BB762ACC1631004AE035 /* Modifier+Extensions.swift */,
 			);
-			path = Helpers;
+			path = "0. Global Helpers";
 			sourceTree = "<group>";
 		};
 		11B0BB7A2ACC3B22004AE035 /* Models */ = {
@@ -144,15 +145,6 @@
 				11B0BB7B2ACC3C4D004AE035 /* Transactions.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		11C5D0E62ACE095A004A1474 /* Notification Stack */ = {
-			isa = PBXGroup;
-			children = (
-				11C5D0E72ACE096B004A1474 /* NotificationStack.swift */,
-				11C5D0E92ACE0A51004A1474 /* NotificationStackShowcase.swift */,
-			);
-			path = "Notification Stack";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,13 +220,13 @@
 				11B0BB7C2ACC3C4D004AE035 /* Transactions.swift in Sources */,
 				11360CCC2ACDA37400A15CF6 /* BanterClub.swift in Sources */,
 				11B0BB792ACC1E96004AE035 /* LayeredStackShowcase.swift in Sources */,
-				11C5D0EA2ACE0A51004A1474 /* NotificationStackShowcase.swift in Sources */,
 				11B0BB672ACC089D004AE035 /* ContentView.swift in Sources */,
+				11A4F66B2AD544DF0080DFC1 /* BorderRadiusComponents.swift in Sources */,
 				11B0BB652ACC089D004AE035 /* EscapadesApp.swift in Sources */,
 				11B0BB772ACC1631004AE035 /* Modifier+Extensions.swift in Sources */,
 				11B0BB742ACC14DB004AE035 /* LayeredStackElement.swift in Sources */,
-				11A4F6672AD43C6F0080DFC1 /* AppleMoreInformation.swift in Sources */,
-				11C5D0E82ACE096B004A1474 /* NotificationStack.swift in Sources */,
+				11A4F6672AD43C6F0080DFC1 /* BorderRadiusCalculator.swift in Sources */,
+				11A4F6692AD5449E0080DFC1 /* BorderRadiusCalculatorIllustration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
