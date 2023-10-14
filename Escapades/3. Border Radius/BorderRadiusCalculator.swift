@@ -64,9 +64,9 @@ struct BorderRadiusCalculator: View {
     
     func randomize() {
         withAnimation(.bouncy) {
-            outer = Double.random(in: 16...96)
-            inner = Double.random(in: 32...64)
-            padding = Double.random(in: 16...32)
+            outer = .random(in: 16...96)
+            inner = .random(in: 32...64)
+            padding = .random(in: 16...32)
         }
     }
     
@@ -90,16 +90,6 @@ struct BorderRadiusCalculator: View {
                                                    inner: $inner,
                                                    padding: $padding)
             }
-                
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-            .mask(LinearGradient(
-                gradient:
-                Gradient(
-                    stops: [.init(color: .clear, location: 0),
-                            .init(color: .clear, location: 0.40),
-                            .init(color: .black, location: 0.80)]),
-                startPoint: .bottom, endPoint: .center
-            ))
             .onChange(of: outer, initial: true) {
                 animations(state: "outer")
             }
@@ -109,17 +99,23 @@ struct BorderRadiusCalculator: View {
             .onChange(of: padding, initial: true) {
                 animations(state: "padding")
             }
-                
+
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .mask(LinearGradient(
+                gradient:
+                Gradient(
+                    stops: [.init(color: .clear, location: 0),
+                            .init(color: .clear, location: 0.40),
+                            .init(color: .black, location: 0.80)]),
+                startPoint: .bottom, endPoint: .center
+            ))
+   
             VStack(spacing: 16) {
                 VStack {
-                    Text(
-                        """
-                        Outer Radius = Inner Radius + Padding
-                        """
-                    )
-                    .font(.system(.body, design: .rounded, weight: .bold))
-                    .foregroundColor(Color(.secondaryLabel))
-                    .contentTransition(.interpolate)
+                    Text("Outer Radius = Inner Radius + Padding")
+                        .font(.system(.body, design: .rounded, weight: .bold))
+                        .foregroundColor(Color(.secondaryLabel))
+                        .contentTransition(.interpolate)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -165,7 +161,6 @@ struct BorderRadiusCalculator: View {
                     .ignoresSafeArea(.all, edges: .bottom)
             }
         }
-        .animation(.none)
         .navigationTitle("Border Radius Calculator")
         .navigationBarTitleDisplayMode(.inline)
     }
